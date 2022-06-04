@@ -1,8 +1,5 @@
 #!/bin/bash
 cd /home/centos/
 git clone git@github.com:DVLVanzi/pygoat.git
-cd pygoat
 docker stop pygoat
 docker image rm -f pygoat
-docker build -f Dockerfile -t pygoat .
-docker run --rm -p 8000:8000 --name pygoat pygoat:latest

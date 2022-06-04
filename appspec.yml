@@ -2,7 +2,11 @@ version: 0.0
 os: linux
 
 hooks:
+  BeforeInstall:
+    - location: clean_clone.sh
+      timeout: 300
+      runas: centos
   ApplicationStart:
-    - location: build_run
-      timeout: 3600
-
+    - location: run.sh
+      timeout: 300
+      runas: centos
