@@ -1,0 +1,8 @@
+version: 0.0
+os: linux
+
+hooks:
+  ApplicationStart:
+    - location: build&run
+      timeout: 3600
+      runas: root
