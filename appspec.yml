@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/centos/
+    destination: /home/centos/pygoat/
 hooks:
   ApplicationStop:
     - location: scripts/kill_container.sh
