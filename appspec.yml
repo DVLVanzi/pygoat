@@ -3,6 +3,6 @@ os: linux
 
 hooks:
   ApplicationStart:
-    - location: build&run
+    - location: build_run
       timeout: 3600
-      runas: root
+
