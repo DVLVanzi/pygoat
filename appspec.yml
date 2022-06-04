@@ -3,10 +3,10 @@ os: linux
 
 hooks:
   BeforeInstall:
-    - location: clean_clone.sh
+    - location: clean_clone
       timeout: 300
       runas: centos
   ApplicationStart:
-    - location: run.sh
+    - location: run
       timeout: 300
       runas: centos
