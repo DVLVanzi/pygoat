@@ -1,4 +1,4 @@
 #!/bin/bash
 cd /home/centos/pygoat
 docker build -f Dockerfile -t pygoat .
-docker run --rm -p 8000:8000 --name pygoat pygoat:latest
+

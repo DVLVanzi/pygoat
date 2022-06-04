@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+
+hooks:
+  BeforeInstall:
+    - location: clean_clone
+      timeout: 300
+      runas: centos
+  ApplicationStart:
+    - location: run
+      timeout: 300
+      runas: centos
